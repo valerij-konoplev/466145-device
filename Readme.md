@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Valerij K.](https://up.htmlacademy.ru/htmlcss/19/user/466145).
-* Наставник: `Неизвестно`.
+* Наставник: [Екатерина Бидянова](https://htmlacademy.ru/profile/id443957).
 
 ---
 
