@@ -3,10 +3,172 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <h1 class="main-title">Device</h1>
+      <nav class="main-nav">
+        <input type="search" name="search">
+        <ul class="user-block">
+          <li><a href="#">Войти</a></li>
+          <li><a href="#">Сравнить</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+        <ul class="shop-block">
+          <li>
+            <a href="#">Каталог товаров</a>
+            <div class="hidden">
+              <ul>
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Квадрокоптеры</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="main-slider">
+        <article>
+          <img src="img/slider-img-1" alt="Палка для селфи" width="384px" height="486px">
+          <h2>Делай селфи, как Бен Стиллер!</h2>
+          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <a href="#" class="btn">Подробнее</a>
+          <table>
+            <tr>
+              <td>8,5 м</td>
+              <td>5 кг</td>
+              <td>Карбон</td>
+            </tr>
+            <tr>
+              <td>Длина палки</td>
+              <td>Вес палки</td>
+              <td>Материал</td>
+            </tr>
+          </table>
+        </article>
+        <article>
+          <img src="img/slider-img-2" alt="Фитнес браслет" width="345px" height="485px">
+          <h2>Худеем правильно!</h2>
+          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          <a href="#" class="btn">Подробнее</a>
+          <table>
+            <tr>
+              <td>48 часов</td>
+            </tr>
+            <tr>
+              <td>Без подзарядки</td>
+            </tr>
+          </table>
+        </article>
+        <article>
+          <img src="img/slider-img-1" alt="Квадрокоптер" width="384px" height="486px">
+          <h2>Порхает как бабочка, жалит как пчела!</h2>
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+          <a href="#" class="btn">Подробнее</a>
+          <table>
+            <tr>
+              <td>800 м</td>
+              <td>50 м</td>
+            </tr>
+            <tr>
+              <td>Дальность полета</td>
+              <td>Радиус поражения</td>
+            </tr>
+          </table>
+        </article>
+        <div class="controls">
+          <!-- slider controls -->
+        </div>
+      </section>
+      <nav class="inner-nav">
+        <ul>
+          <li><a href="#">Виртуальная реальность</a></li>
+          <li><a href="#">Моноподы для селфи</a></li>
+          <li><a href="#">Экшн-камеры</a></li>
+          <li><a href="#">Фитнес-браслеты</a></li>
+          <li><a href="#">Умные часы</a></li>
+          <li><a href="#">Квадрокоптеры</a></li>
+        </ul>
+      </nav>
+      <section class="features">
+        <ul class="controls">
+          <li class="btn">Доставка</li>
+          <li class="btn">Гарантия</li>
+          <li class="btn">Кредит</li>
+        </ul>
+        <div class="description">
+          <h3>Доставка</h3>
+          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        </div>
+      </section>
+      <section class="partners">
+        <a href="#"><img src="#" alt="dji"></a>
+        <a href="#"><img src="#" alt="SP Gadgets"></a>
+        <a href="#"><img src="#" alt="GoPro"></a>
+        <a href="#"><img src="#" alt="Vive"></a>
+      </section>
+      <section class="about-us">
+        <h3>О нас</h3>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+        <ul class="custom-list">
+          <li>Деловые Линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+          <a href="#" class="btn">Подробнее о нас</a>
+        </ul>
+      </section>
+      <section class="contacts">
+        <h3>Контакты</h3>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <img src="#" alt="map">
+        <a href="#" class="btn">Напишите нам</a>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <h4 class="main-title yellow">Device</h4>
+      <nav class="footer-nav">
+        <ul class="user-block">
+          <li><a href="#">Войти</a></li>
+          <li><a href="#">Сравнить</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+        <ul class="shop-block">
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <p class="address">г. Москва, ул. Строителей, 15</p>
+      <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+      <ul class="social-links">
+        <li><a href="#">facebook</a></li>
+        <li><a href="#">instagram</a></li>
+        <li><a href="#">twitter</a></li>
+        <a href="https://htmlacademy.ru"><img src="#" alt="htmlacademy">htmlacademy.ru</a>
+      </ul>
+    </footer>
+    <section class="modal-feedback hidden">
+      <form action="post">
+        <!-- form elements -->
+      </form>
+    </section>
+    <section class="modal-map hidden">
+      <img src="#" alt="Карта">
+    </section>
   </body>
 </html>
