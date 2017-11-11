@@ -48,8 +48,31 @@
         <li><a href="#">Каталог товаров</a></li>
         <li><a href="#" class="active">Моноподы для селфи</a></li>
       </ul>
-      <form action="post" class="sorting-form">
-        <!-- form elements -->
+      <form action="//echo.htmlacademy.ru" method="get" class="sorting-form">
+        <span>Фильтр:</span>
+        <fieldset class="price">
+          <legend>Стоимость</legend>
+          <div class="price-controls">
+            <div class="price-btn-min"></div>
+            <div class="price-btn-max"></div>
+          </div>
+          <input type="number" name="sort-price" id="sort-price-min" readonly value="0" placeholder="от 0">
+          <input type="number" name="sort-price" id="sort-price-max" readonly value="5000" placeholder="до 5000">
+        </fieldset>
+        <fieldset class="color">
+          <legend>Цвет</legend>
+          <label><input type="checkbox" name="color" value="black" checked>Черный</label>
+          <label><input type="checkbox" name="color" value="white">Белый</label>
+          <label><input type="checkbox" name="color" value="blue" checked>Синий</label>
+          <label><input type="checkbox" name="color" value="red" checked>Красный</label>
+          <label><input type="checkbox" name="color" value="pink">Розовый</label>
+        </fieldset>
+        <fieldset class="bluetooth">
+          <legend>Bluetooth</legend>
+          <label><input type="radio" name="bluetooth" checked>Есть</label>
+          <label><input type="radio" name="bluetooth">Нет</label>
+        </fieldset>
+        <button type="submit" class="btn">Показать</button>
       </form>
       <div class="sorting-items">
         <span>Сортировка:</span>
@@ -116,7 +139,7 @@
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
-      <p class="address">г. Москва, ул. Строителей, 15</p>
+      <address>г. Москва, ул. Строителей, 15</address>
       <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       <ul class="social-links">
         <li><a href="#">facebook</a></li>

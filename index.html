@@ -170,7 +170,7 @@
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
-      <p class="address">г. Москва, ул. Строителей, 15</p>
+      <address>г. Москва, ул. Строителей, 15</address>
       <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       <ul class="social-links">
         <li><a href="#">facebook</a></li>
@@ -181,8 +181,21 @@
     </footer>
     <section class="modal-feedback hidden">
       <h2 class="hidden">Напишете нам</h2>
-      <form action="post">
-        <!-- form elements -->
+      <form action="//echo.htmlacademy.ru" method="post" class="modal-feedback-form">
+        <button class="close">Закрыть</button>
+        <label>
+          Ваше имя:
+          <input type="text" name="feedback-name" placeholder="Представьтесь, пожалуйста">
+        </label>
+        <label>
+          Ваш e-mail:
+          <input type="email" name="feedback-email" placeholder="Для отправки ответа">
+        </label>
+        <label>
+          Текст письма:
+          <textarea name="feedback" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        </label>
+        <button type="submit" class="btn">Отправить</button>
       </form>
     </section>
     <section class="modal-map hidden">
