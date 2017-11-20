@@ -241,6 +241,7 @@ a {
 
 .features {
   background-color: #e5e5e5;
+  opacity: 0.99;
 }
 
 .features-controls .btn {
@@ -305,7 +306,9 @@ a {
   background-color: #464646;
 }
 
-.main-footer a {
+.main-footer a,
+.main-footer address {
+  font-style: normal;
   color: #ffffff;
 }
 
@@ -327,17 +330,27 @@ a {
   opacity: 0.3;
 }
 
-.main-footer-bottom > a {
+.htmlacademy-link {
+  display: inline-block;
   background-image: url("../img/logo-html.svg");
   background-repeat: no-repeat;
-  width: 27;
-  height: 35;
+  width: 27px;
+  height: 35px;
 }
 
 .social-links a {
   display: inline-block;
   width: 42px;
   height: 42px;
+  opacity: 0.3;
+}
+
+.social-links a:hover {
+  opacity: 0.6;
+}
+
+.social-links a:active {
+  opacity: 0.1;
 }
 
 .social-links .fb {
@@ -395,6 +408,7 @@ a {
 
 .sorting-form {
   background-color: #eeeeee;
+  opacity: 0.99;
 }
 
 .sorting-form span {
