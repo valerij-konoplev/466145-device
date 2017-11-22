@@ -8,23 +8,23 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header container">
       <!-- <img src="img/main-logo.png" alt="Device" width="163" height="36"> -->
       <h1 class="main-title">Device</h1>
       <div class="user-nav">
         <div class="user-search">
           <input class="search" type="search" name="search" placeholder="Поиск по сайту">
-          <button class="search-btn">Найти</button>
+          <button class="search-btn hidden">Найти</button>
         </div>
         <ul class="user-block">
           <li><a class="user-login" href="#">Войти</a></li>
-          <li><a class="compare" href="#">Сравнить</a></li>
-          <li><a class="cart" href="#">Корзина</a></li>
+          <li><a class="user-compare" href="#">Сравнить</a></li>
+          <li><a class="user-cart" href="#">Корзина</a></li>
         </ul>
       </div>
       <nav class="main-nav">
         <ul class="shop-block">
-          <li>
+          <li class="shop-block-catalog">
             <a href="catalog.html">Каталог товаров</a>
             <div class="shop-block-inner hidden">
               <ul>
@@ -48,16 +48,16 @@
       </nav>
     </header>
     <main>
-      <section class="main-slider">
+      <section class="main-slider container">
         <h2 class="hidden">Лучшие предложения</h2>
         <article class="main-slide">
           <img src="img/slider-1.png" alt="Палка для селфи" width="384" height="486">
           <div class="description">
-            <h2>Делай селфи, как Бен Стиллер!</h2>
-            <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <h2>Делай селфи, <br> как Бен Стиллер!</h2>
+            <p>Самая длинная палка для селфи доступна в нашем магазине. <br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a href="#" class="btn">Подробнее</a>
             <table class="main-slide-table">
-              <tr>
+              <tr class="main-slide-table-top">
                 <td>8,5 м</td>
                 <td>5 кг</td>
                 <td>Карбон</td>
@@ -116,7 +116,7 @@
           </label>
         </div>
       </section>
-      <section class="inner-nav">
+      <section class="inner-nav container">
         <h2 class="hidden">Популярные категории</h2>
         <ul class="inner-nav-list">
           <li>
@@ -131,9 +131,9 @@
           <li>
             <a class="inner-nav-link" href="#">
               <svg width="160" height="160">
-                <image xlink:href="img/popular-2.svg" width="86" height="117" x="38" y="43"/>
+                <image xlink:href="img/popular-2.svg" width="86" height="117" x="38" y="41"/>
               </svg>
-              Моноподы для селфи
+              Моноподы <br> для селфи
             </a>
           </li>
           <li>
@@ -171,34 +171,36 @@
         </ul>
       </section>
       <section class="features">
-        <ul class="features-controls">
-          <li class="btn">Доставка</li>
-          <li class="btn">Гарантия</li>
-          <li class="btn">Кредит</li>
-        </ul>
-        <div class="features-description">
-          <h3>Доставка</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          <svg width="136" height="164">
-            <image xlink:href="img/delivery.svg" width="136" height="164"/>
-          </svg>
-        </div>
-        <div class="features-description hidden">
-          <h3>Гарантия</h3>
-          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-          <svg width="171" height="194">
-            <image xlink:href="img/warranty.svg" width="171" height="194"/>
-          </svg>
-        </div>
-        <div class="features-description hidden">
-          <h3>Кредит</h3>
-          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-          <svg width="156" height="186">
-            <image xlink:href="img/credit.svg" width="156" height="186"/>
-          </svg>
+        <div class="container">
+          <ul class="features-controls">
+            <li class="btn">Доставка</li>
+            <li class="btn">Гарантия</li>
+            <li class="btn">Кредит</li>
+          </ul>
+          <div class="features-description">
+            <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            <svg width="136" height="164">
+              <image xlink:href="img/delivery.svg" width="136" height="164"/>
+            </svg>
+          </div>
+          <div class="features-description hidden">
+            <h3>Гарантия</h3>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+            <svg width="171" height="194">
+              <image xlink:href="img/warranty.svg" width="171" height="194"/>
+            </svg>
+          </div>
+          <div class="features-description hidden">
+            <h3>Кредит</h3>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            <svg width="156" height="186">
+              <image xlink:href="img/credit.svg" width="156" height="186"/>
+            </svg>
+          </div>
         </div>
       </section>
-      <section class="partners">
+      <section class="partners container">
         <h2 class="hidden">Партнеры</h2>
         <a href="#"><img src="img/logo-1.jpg" alt="dji"></a>
         <a href="#"><img src="img/logo-2.jpg" alt="SP Gadgets"></a>
@@ -227,32 +229,34 @@
     </main>
     <footer class="main-footer">
       <!-- <img src="img/main-logo-yellow.png" alt="Device" width="163" height="36"> -->
-      <div class="main-footer-top">
-        <h4 class="main-title-footer"><a href="#">Device</a></h4>
-        <ul class="user-block">
-          <li><a href="#">Войти</a></li>
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
-        </ul>
-      </div>
-      <div class="main-footer-middle">
-        <address>г. Москва, ул. Строителей, 15</address>
-        <nav class="footer-nav">
-          <ul class="shop-block">
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Контакты</a></li>
+      <div class="container">
+        <div class="main-footer-top">
+          <h4 class="main-title-footer"><a href="#">Device</a></h4>
+          <ul class="user-block-footer">
+            <li><a href="#">Войти</a></li>
+            <li><a href="#">Сравнить</a></li>
+            <li><a href="#">Корзина</a></li>
           </ul>
-        </nav>
-        <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-      </div>
-      <div class="main-footer-bottom">
-        <ul class="social-links">
-          <li><a class="fb" href="#"><span class="hidden">facebook</span></a></li>
-          <li><a class="inst" href="#"><span class="hidden">instagram</span></a></li>
-          <li><a class="tw" href="#"><span class="hidden">twitter</span></a></li>
-        </ul>
-        <a class="htmlacademy-link" href="//htmlacademy.ru"><span class="hidden">htmlacademy.ru</span></a>
+        </div>
+        <div class="main-footer-middle">
+          <address>г. Москва, ул. Строителей, 15</address>
+          <nav class="footer-nav">
+            <ul class="shop-block">
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+        </div>
+        <div class="main-footer-bottom">
+          <ul class="social-links">
+            <li><a class="fb" href="#"><span class="hidden">facebook</span></a></li>
+            <li><a class="inst" href="#"><span class="hidden">instagram</span></a></li>
+            <li><a class="tw" href="#"><span class="hidden">twitter</span></a></li>
+          </ul>
+          <a class="htmlacademy-link" href="//htmlacademy.ru"><span class="hidden">htmlacademy.ru</span></a>
+        </div>
       </div>
     </footer>
     <section class="modal-feedback hidden">
