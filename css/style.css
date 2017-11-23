@@ -84,7 +84,8 @@ a {
   transition: 0.25s;
 }
 
-.btn:hover::before {
+.btn:hover::before,
+.btn:focus::before {
   top: 0;
   height: 100%;
 }
@@ -124,7 +125,8 @@ a {
   cursor: default;
 }
 
-.main-title a:hover {
+.main-title a:hover,
+.main-title a:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -222,7 +224,8 @@ a {
   background-position: 0 0;
 }
 
-.user-block a:hover {
+.user-block a:hover,
+.user-block a:focus {
   opacity: 0.6;
 }
 
@@ -267,7 +270,8 @@ a {
   opacity: 0.3;
 }
 
-.shop-block a:hover {
+.shop-block a:hover,
+.shop-block a:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -386,7 +390,8 @@ a {
   margin-bottom: 27px;
 }
 
-.inner-nav-link:hover svg{
+.inner-nav-link:hover svg,
+.inner-nav-link:focus svg{
   background-color: rgba(240, 197, 46, 1);
 }
 
@@ -404,6 +409,7 @@ a {
 }
 
 .features {
+  width: 100%;
   padding-top: 151px;
   padding-bottom: 114px;
   margin-bottom: 95px;
@@ -494,7 +500,8 @@ a {
   opacity: 0.2;
 }
 
-.partners img:hover {
+.partners img:hover,
+.partners img:focus {
   filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
   -webkit-filter: grayscale(0%);
   opacity: 1;
@@ -560,6 +567,7 @@ a {
 }
 
 .main-footer {
+  width: 100%;
   background-color: #464646;
 }
 
@@ -604,7 +612,8 @@ a {
   cursor: pointer;
 }
 
-.main-title-footer a:hover {
+.main-title-footer a:hover,
+.main-title-footer a:focus {
   color: rgba(255, 198, 0, 0.6);
 }
 
@@ -637,11 +646,13 @@ a {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.user-block-footer a:hover {
+.user-block-footer a:hover,
+.user-block-footer a:focus {
   color: rgba(255, 255, 255, 1);
 }
 
-.user-block-footer-link:hover svg {
+.user-block-footer-link:hover svg,
+.user-block-footer-link:focus svg {
   opacity: 0.6;
 }
 
@@ -677,7 +688,8 @@ a {
   text-transform: uppercase;
 }
 
-.shop-block-footer a:hover {
+.shop-block-footer a:hover,
+.shop-block-footer a:focus {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -739,7 +751,8 @@ a {
   opacity: 0.3;
 }
 
-.social-links a:hover {
+.social-links a:hover,
+.social-links a:focus {
   opacity: 0.6;
 }
 
@@ -787,7 +800,8 @@ a {
   opacity: 0.3;
 }
 
-.breadcrumbs a:hover {
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
   opacity: 0.6;
 }
 
@@ -795,7 +809,8 @@ a {
   opacity: 0.1;
 }
 
-.breadcrumbs .active:hover {
+.breadcrumbs .active:hover,
+.breadcrumbs .active:focus {
   cursor: default;
   opacity: 0.3;
 }
@@ -867,7 +882,8 @@ a {
   opacity: 0.3;
 }
 
-.sorting-items-spec a:hover {
+.sorting-items-spec a:hover,
+.sorting-items-spec a:focus {
   opacity: 0.6;
 }
 
