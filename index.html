@@ -17,7 +17,11 @@
           <button class="search-btn">Найти</button>
         </div>
         <ul class="user-block">
-          <li><a class="user-login" href="#">Войти</a></li>
+          <li>
+            <ul class="user-login-block">
+              <li><a class="user-login" href="#">Войти</a></li>
+            </ul>
+          </li>
           <li><a class="user-compare" href="#">Сравнить</a></li>
           <li><a class="user-cart" href="#">Корзина</a></li>
         </ul>
@@ -202,10 +206,10 @@
       </section>
       <section class="partners container">
         <h2 class="hidden">Партнеры</h2>
-        <a href="#"><img src="img/logo-1.jpg" alt="dji"></a>
-        <a href="#"><img src="img/logo-2.jpg" alt="SP Gadgets"></a>
-        <a href="#"><img src="img/logo-3.jpg" alt="GoPro"></a>
-        <a href="#"><img src="img/logo-4.jpg" alt="Vive"></a>
+        <a class="partners-link" href="#"><img src="img/logo-1.jpg" alt="dji"></a>
+        <a class="partners-link" href="#"><img src="img/logo-2.jpg" alt="SP Gadgets"></a>
+        <a class="partners-link" href="#"><img src="img/logo-3.jpg" alt="GoPro"></a>
+        <a class="partners-link" href="#"><img src="img/logo-4.jpg" alt="Vive"></a>
       </section>
       <section class="about-and-contacts container">
         <div class="about-us">
@@ -234,10 +238,14 @@
           <h4 class="main-title-footer">Device</h4>
           <ul class="user-block-footer">
             <li>
-              <a class="user-block-footer-link user-login" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#ffc600" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>
-                Войти
-              </a>
+              <ul class="user-login-block-footer">
+                <li>
+                  <a class="user-block-footer-link user-login" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#ffc600"d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 00-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>
+                      Войти
+                  </a>
+                </li>
+              </ul>
             </li>
             <li>
               <a class="user-block-footer-link user-compare" href="#">
