@@ -105,7 +105,7 @@ a {
   position: relative;
   margin-top: 40px;
   padding: 0 60px;
-  padding-top : 47px;
+  padding-top : 33px;
   padding-bottom: 163px;
   background-color: rgba(240, 197, 46, 0.5);
 }
@@ -137,7 +137,8 @@ a {
 .user-nav {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 42px;
+  align-items: center;
+  margin-bottom: 28px;
   font-size: 15px;
   font-weight: 300;
   line-height: 22px;
@@ -149,16 +150,10 @@ a {
   width: 441px;
 }
 
-.user-search .search {
-  margin-left: 39px;
-  border: 0;
-  background-color: transparent;
-}
-
 .user-search::before {
   content: "";
   position: absolute;
-  top: -1px;
+  top: 13px;
   left: -1px;
   width: 26px;
   height: 26px;
@@ -167,9 +162,51 @@ a {
   background-position: 0 -475px;
 }
 
-.user-search button {
+.user-search .search {
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  padding-left: 39px;
+  padding-right: 95px;
   border: 0;
+  border-bottom: 2px solid transparent;
   background-color: transparent;
+  opacity: 0.3;
+}
+
+.user-search .search:hover {
+  opacity: 0.6;
+}
+
+.user-search .search:focus {
+  width: 441px;
+  outline-color: transparent;
+  border-bottom-color: #000000;
+  opacity: 1;
+}
+
+.user-search .search-btn {
+  display: none;
+  position: absolute;
+  top: 1px;
+  right: 0;
+  padding: 14px;
+  border: 2px solid #000000;
+  background-color: transparent;
+}
+
+.search:focus + .search-btn {
+  display: inline-block;
+}
+
+.search:focus + .search-btn:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.search:focus + .search-btn:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .user-block {
