@@ -110,6 +110,10 @@ a {
   background-color: rgba(240, 197, 46, 0.5);
 }
 
+.main-header.inner {
+  padding-bottom: 48px;
+}
+
 .main-title {
   position: absolute;
   top: -28px;
@@ -665,7 +669,6 @@ a {
 .user-block-footer {
   display: flex;
   justify-content: space-between;
-  align-items: top;
   min-width: 325px;
   margin: 0;
   margin-top: 14px;
@@ -837,7 +840,20 @@ a {
 
 /* inner pages */
 
+.catalog-bg {
+  width: 100%;
+  background-image:
+    linear-gradient(to right, #dcdcdc 0%, #dcdcdc 30%, #eeeeee 30%, #eeeeee 100%),
+    linear-gradient(to right, #eeeeee 0%, #eeeeee 30%, #ffffff 30%, #ffffff 100%);
+  background-size: 100% 70px, 100% 100%;
+  background-repeat: no-repeat;
+  background-position-y: 146px, 216px;
+}
+
 .inner-title {
+  margin-top: 33px;
+  margin-left: 59px;
+  margin-bottom: 22px;
   font-family: "Gilroy - Extra Bold", Arial, serif;
   font-size: 48px;
   font-weight: 800;
@@ -846,7 +862,16 @@ a {
 }
 
 .breadcrumbs {
+  display: flex;
+  margin: 0;
+  margin-left: 60px;
+  margin-bottom: 48px;
+  padding: 0;
   list-style: none;
+}
+
+.breadcrumbs li {
+  margin-right: 38px;
 }
 
 .breadcrumbs a {
@@ -872,27 +897,48 @@ a {
   opacity: 0.3;
 }
 
+.catalog-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .sorting-form {
-  background-color: #eeeeee;
+  width: 328px;
+  padding-left: 60px;
+  padding-right: 68px;
+  background-color: transparent;
 }
 
 .sorting-form span {
+  width: 100%;
+  display: inline-block;
+  padding: 24px 0;
+  margin-bottom: 69px;
   font-family: "Gilroy - Extra Bold", Arial, serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 22px;
-  letter-spacing: 0.91px;
+  letter-spacing: 3.91px;
   text-transform: uppercase;
-  background-color: #dbdbdb;
   color: #000000;
 }
 
+.sorting-form fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 .sorting-form legend {
+  display: inline-block;
+  width: 100%;
+  padding-top: 10px;
   font-family: "Gilroy - Extra Bold", Arial, serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
   color: #000000;
+  border-top: 2px solid #000000;
 }
 
 .sorting-form label {
@@ -906,7 +952,13 @@ a {
   width: 200px;
 }
 
+.sorting-form-price legend {
+  margin-bottom: 30px;
+}
+
 .sorting-form-price .price-controls {
+  position: relative;
+  margin-bottom: 36px;
   font-family: "Gilroy", Arial, serif;
   font-size: 14px;
   font-weight: 800;
@@ -914,22 +966,100 @@ a {
   color: #bfbfbf;
 }
 
+.price-range-line {
+  position: relative;
+  top: 5px;
+  width: 100%;
+  height: 2px;
+  margin-bottom: 16px;
+  background-color: #dbdbdb;
+}
+
+.price-btn-min,
+.price-btn-max {
+  display: inline-block;
+}
+
+.price-btn-min {
+  margin-right: 60px;
+}
+
+.sorting-form-color {
+  display: flex;
+  flex-direction: column;
+}
+
+.sorting-form-color legend {
+  margin-bottom: 18px;
+}
+
+.sorting-form-color label {
+  padding-left: 39px;
+}
+
+.sorting-form-color label:last-child {
+  margin-bottom: 31px;
+}
+
+.sorting-form-color input {
+  display: none;
+}
+
+.sorting-form-bluetooth {
+  display: flex;
+  flex-direction: column;
+}
+
+.sorting-form-bluetooth legend {
+  margin-bottom: 18px;
+}
+
+.sorting-form-bluetooth label {
+  padding-left: 38px;
+}
+
+.sorting-form-bluetooth input {
+  display: none;
+}
+
+.sorting-form-bluetooth label:last-child {
+  margin-bottom: 30px;
+}
+
+.catalog-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 760px;
+}
+
 .sorting-items {
-  background-color: #ebebeb;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 69px;
+  background-color: #eeeeee;
 }
 
 .sorting-items span {
+  padding: 24px 0;
+  margin-right: 9px;
   font-family: "Gilroy - Extra Bold", Arial, serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 22px;
-  letter-spacing: 0.91px;
+  letter-spacing: 3.81px;
   text-transform: uppercase;
   color: #000000;
 }
 
 .sorting-items-spec {
+  display: flex;
   list-style: none;
+}
+
+.sorting-items-spec li:not(:last-of-type) {
+  margin-right: 30px;
 }
 
 .sorting-items-spec a {
@@ -953,34 +1083,109 @@ a {
   cursor: default;
 }
 
-.catalog-items h2 {
+.sorting-items-arrows {
+  position: absolute;
+  right: -4px;
+}
+
+.sorting-items-arrows {
+  font-size: 0;
+}
+
+.sorting-items-arrows a {
+  display: inline-block;
+  width: 21px;
+  height: 20px;
+  background-image: url('../img/icons.svg');
+  background-position: 0 -183px;
+  background-repeat: no-repeat;
+}
+
+.catalog-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.catalog-item {
+  position: relative;
+  width: 360px;
+  margin-bottom: 32px;
+}
+
+.catalog-item h2 {
+  display: inline-block;
+  width: 250px;
+  margin-top: 29px;
   font-family: "Gilroy - Extra Bold", Arial, serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
+  letter-spacing: 4.67;
   color: #000000;
 }
 
-.catalog-items span {
+.catalog-item span {
+  position: absolute;
+  right: 0;
+  bottom: 39px;
   font-family: "Gilroy", Arial, serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
+  vertical-align: middle;
 }
 
-.catalog-items .btn {
+.catalog-item .btn {
   width: 200px;
+  margin-top: 170px;
+  margin-bottom: 18px;
 }
 
-.catalog-items .compare-btn {
+.catalog-item .compare-btn {
   font-size: 13px;
   font-weight: 300;
   line-height: 20px;
   opacity: 0.5;
 }
 
+.catalog-item .compare-btn:hover,
+.catalog-item .compare-btn:focus {
+  opacity: 1;
+}
+
+.catalog-item .compare-btn:active {
+  opacity: 0.2;
+}
+
+.catalog-item-hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 360px;
+  height: 380px;
+  background-color: rgba(238, 238, 238, 0.7);
+}
+
+.catalog-item-hover a {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.catalog-item:hover .catalog-item-hover {
+  display: block;
+}
+
 .catalog-pagination {
-  background-color: #ebebeb;
+  margin-top: -13px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #eeeeee;
 }
 
 .catalog-pagination a {
@@ -992,6 +1197,48 @@ a {
   color: #000000;
 }
 
+.catalog-pagination .prew,
+.catalog-pagination .next {
+  padding: 24px;
+  letter-spacing: 3.91px;
+}
+
+.catalog-pagination .prew:hover,
+.catalog-pagination .next:hover,
+.catalog-pagination .prew:focus,
+.catalog-pagination .next:focus {
+  background-color: #d9d9d9;
+}
+
+.catalog-pagination .prew:active,
+.catalog-pagination .next:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .catalog-pages {
+  display: flex;
+  justify-content: space-between;
+  min-width: 120px;
   list-style: none;
+}
+
+.catalog-pages a:not(.active) {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-pages a:hover,
+.catalog-pages a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog-pages a:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.catalog-pages .active,
+.catalog-pages .active:hover,
+.catalog-pages .active:focus,
+.catalog-pages .active:active {
+  color: rgba(0, 0, 0, 1);
+  cursor: default;
 }
