@@ -74,16 +74,23 @@
           </fieldset>
           <fieldset class="sorting-form-color">
             <legend>Цвет</legend>
-            <label><input type="checkbox" name="black" checked>Черный</label>
-            <label><input type="checkbox" name="white">Белый</label>
-            <label><input type="checkbox" name="blue" checked>Синий</label>
-            <label><input type="checkbox" name="red" checked>Красный</label>
-            <label><input type="checkbox" name="pink">Розовый</label>
+            <input type="checkbox" id="checkbox-black" class="sorting-form-checkbox" name="black" checked>
+            <label for="checkbox-black">Черный</label>
+            <input type="checkbox" id="checkbox-white" class="sorting-form-checkbox" name="white">
+            <label for="checkbox-white">Белый</label>
+            <input type="checkbox" id="checkbox-blue" class="sorting-form-checkbox" name="blue" checked>
+            <label for="checkbox-blue">Синий</label>
+            <input type="checkbox" id="checkbox-red" class="sorting-form-checkbox" name="red" checked>
+            <label for="checkbox-red">Красный</label>
+            <input type="checkbox" id="checkbox-pink" class="sorting-form-checkbox" name="pink">
+            <label for="checkbox-pink">Розовый</label>
           </fieldset>
           <fieldset class="sorting-form-bluetooth">
             <legend>Bluetooth</legend>
-            <label><input type="radio" name="bluetooth" checked>Есть</label>
-            <label><input type="radio" name="bluetooth">Нет</label>
+            <input type="radio" id="radio-on" class="sorting-form-radio" name="bluetooth" checked>
+            <label for="radio-on">Есть</label>
+            <input type="radio" id="radio-off" class="sorting-form-radio" name="bluetooth">
+            <label for="radio-off">Нет</label>
           </fieldset>
           <button type="submit" class="btn">Показать</button>
         </form>
@@ -97,7 +104,7 @@
             </ul>
             <div class="sorting-items-arrows">
               <a href="#">Вверх</a>
-              <a href="#">Вниз</a>
+              <a href="#" class="active">Вниз</a>
             </div>
           </div>
           <section class="catalog-items">
