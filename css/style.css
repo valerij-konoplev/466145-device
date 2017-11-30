@@ -1032,10 +1032,26 @@ a {
 }
 
 .sorting-form {
+  position: relative;
   width: 328px;
   padding-left: 60px;
   padding-right: 68px;
   background-color: transparent;
+  z-index: 1;
+}
+
+.sorting-form::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 328px;
+  height: 100%;
+  background-image:
+    linear-gradient(to right, #dcdcdc 0%, #dcdcdc 100%),
+    linear-gradient(to right, #eeeeee 0%, #eeeeee 100%);
+  background-size: 100% 70px, 100% 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .sorting-form span {
