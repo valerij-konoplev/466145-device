@@ -26,7 +26,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Open Sans", Arial, serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   color: #464646;
   background-color: #ffffff;
@@ -59,7 +59,7 @@ a {
   display: inline-block;
   z-index: 1;
   padding: 9px 5px;
-  font-family: "Gilroy - Extra Bold", Arial, serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -119,7 +119,7 @@ a {
   top: -28px;
   left: 57px;
   margin: 0;
-  font-family: "Gilroy - Extra Bold", Arial, serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 48px;
   font-weight: 800;
@@ -278,13 +278,17 @@ a {
   opacity: 0.3;
 }
 
+.main-nav {
+  position: relative;
+}
+
 .shop-block {
   display: flex;
   justify-content: space-between;
   list-style: none;
   padding: 0;
   margin: 0;
-  font-family: "Gilroy - Extra Bold", Arial, serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 26px;
@@ -300,7 +304,7 @@ a {
   position: relative;
 }
 
-.shop-block-catalog a::after {
+.shop-block-catalog-btn::after {
   content: "";
   position: absolute;
   left: 225px;
@@ -321,8 +325,48 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.shop-block-inner {
+  display: flex;
+  position: absolute;
+  top: 210px;
+  left: 0;
+  right: 0;
+  width: 1160px;
+  margin: 0 auto;
+  background-color: #f7e296;
+}
+
 .shop-block-inner ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  height: 130px;
+  margin: 0;
+  padding: 0;
+  padding-left: 60px;
+  padding-bottom: 40px;
   list-style: none;
+}
+
+.shop-block-inner a {
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  text-transform: none;
+  list-style: none;
+}
+
+.shop-block-inner a:hover,
+.shop-block-inner a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.shop-block-inner a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .main-slider {
@@ -352,7 +396,7 @@ a {
 .main-slide h2 {
   margin-top: 80px;
   margin-bottom: 20px;
-  font-family: "Gilroy - Extra Bold", Arial, serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 56px;
@@ -407,7 +451,7 @@ a {
 }
 
 .inner-nav {
-  font-family: "Gilroy - Extra Bold", Arial, serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 23px;
@@ -510,7 +554,7 @@ a {
   margin: 0;
   padding: 0;
   margin-bottom: 29px;
-  font-family: "Gilroy - Extra Bold", Arial, serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 56px;
@@ -575,7 +619,7 @@ a {
   margin: 0;
   margin-bottom: 39px;
   padding: 0;
-  font-family: "Gilroy - Extra Bold", Arial, serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 56px;
@@ -603,7 +647,7 @@ a {
   padding: 35px 36px;
   margin: 0;
   margin-bottom: 19px;
-  font-family: "Gilroy - Extra Bold", Arial, serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 40px;
@@ -636,7 +680,7 @@ a {
 
 .main-title-footer {
   margin: 0;
-  font-family: "Gilroy - Extra Bold", Arial, serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 48px;
   font-weight: 800;
@@ -647,7 +691,7 @@ a {
 }
 
 .main-title-footer a {
-  font-family: "Gilroy - Extra Bold", Arial, serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 48px;
   font-weight: 800;
@@ -731,7 +775,7 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-family: "Gilroy - Extra Bold", Arial, serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 26px;
@@ -854,7 +898,7 @@ a {
   margin-top: 33px;
   margin-left: 59px;
   margin-bottom: 22px;
-  font-family: "Gilroy - Extra Bold", Arial, serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 48px;
   font-weight: 800;
   line-height: 56px;
@@ -927,7 +971,7 @@ a {
   display: inline-block;
   padding: 24px 0;
   margin-bottom: 69px;
-  font-family: "Gilroy - Extra Bold", Arial, serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 22px;
@@ -946,7 +990,7 @@ a {
   display: inline-block;
   width: 100%;
   padding-top: 10px;
-  font-family: "Gilroy - Extra Bold", Arial, serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -972,7 +1016,7 @@ a {
 .sorting-form-price .price-controls {
   position: relative;
   margin-bottom: 36px;
-  font-family: "Gilroy", Arial, serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 14px;
   font-weight: 800;
   line-height: 20px;
@@ -1144,7 +1188,7 @@ a {
 .sorting-items span {
   padding: 24px 0;
   margin-right: 9px;
-  font-family: "Gilroy - Extra Bold", Arial, serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 22px;
@@ -1239,7 +1283,7 @@ a {
   height: 60px;
   padding-top: 19px;
   padding-left: 4px;
-  font-family: "Gilroy - Extra Bold", Arial, serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 14px;
   font-weight: 800;
   line-height: 20px;
@@ -1255,7 +1299,7 @@ a {
   display: inline-block;
   width: 250px;
   margin-top: 29px;
-  font-family: "Gilroy - Extra Bold", Arial, serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -1267,7 +1311,7 @@ a {
   position: absolute;
   right: 0;
   bottom: 39px;
-  font-family: "Gilroy", Arial, serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
@@ -1327,7 +1371,7 @@ a {
 }
 
 .catalog-pagination a {
-  font-family: "Gilroy - Extra Bold", Arial, serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 22px;
