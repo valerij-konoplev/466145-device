@@ -63,11 +63,11 @@
         <article class="main-slide hidden">
           <img src="img/slider-2.png" alt="Фитнес браслет" width="345" height="485">
           <div class="description">
-            <h2>Худеем правильно!</h2>
+            <h2>Худеем <br> правильно!</h2>
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <a href="#" class="btn">Подробнее</a>
             <table class="main-slide-table">
-              <tr>
+              <tr class="main-slide-table-top">
                 <td>48 часов</td>
               </tr>
               <tr>
@@ -77,13 +77,13 @@
           </div>
         </article>
         <article class="main-slide hidden">
-          <img src="img/slider-3.png" alt="Квадрокоптер" width="384" height="486">
+          <img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
           <div class="description">
             <h2>Порхает как бабочка, жалит как пчела!</h2>
             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a href="#" class="btn">Подробнее</a>
             <table class="main-slide-table">
-              <tr>
+              <tr class="main-slide-table-top">
                 <td>800 м</td>
                 <td>50 м</td>
               </tr>
@@ -95,15 +95,12 @@
           </div>
         </article>
         <div class="main-slider-controls">
-          <label>
-            <input type="radio" name="main-slider" checked>
-          </label>
-          <label>
-            <input type="radio" name="main-slider">
-          </label>
-          <label>
-            <input type="radio" name="main-slider">
-          </label>
+          <input id="main-slide-btn-1" class="main-slide-btn" type="radio" name="main-slider" checked>
+          <label for="main-slide-btn-1">Первый слайд</label>
+          <input id="main-slide-btn-2" class="main-slide-btn" type="radio" name="main-slider">
+          <label for="main-slide-btn-2">Второй слайд</label>
+          <input id="main-slide-btn-3" class="main-slide-btn" type="radio" name="main-slider">
+          <label for="main-slide-btn-3">Третий слайд</label>
         </div>
       </section>
       <section class="inner-nav container">

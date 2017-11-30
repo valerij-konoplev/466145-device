@@ -111,7 +111,7 @@ a {
 }
 
 .main-header.inner {
-  padding-bottom: 48px;
+  padding-bottom: 47px;
 }
 
 .main-title {
@@ -384,8 +384,12 @@ a {
   margin: 0 auto;
 }
 
-.main-slide:first-of-type img { /* Нужно прописать марджины для остальных слайдов */
+.main-slide:nth-of-type(1) img {
   margin-left: 90px;
+}
+
+.main-slide:nth-of-type(3) img {
+  margin-top: 70px;
 }
 
 .main-slide .description {
@@ -394,6 +398,7 @@ a {
 }
 
 .main-slide h2 {
+  position: relative;
   margin-top: 80px;
   margin-bottom: 20px;
   font-family: "Gilroy - Extra Bold", Arial, sans-serif;
@@ -402,6 +407,38 @@ a {
   line-height: 56px;
   letter-spacing: 0.69px;
   color: #000000;
+  z-index: 1;
+}
+
+.main-slide h2::before {
+  content: "";
+  position: absolute;
+  top: -42px;
+  width: 100px;
+  height: 7px;
+  background-color: #ffffff;
+}
+
+.main-slide h2::after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: -5px;
+  font-size: 179px;
+  color: #ffffff;
+  z-index: -1;
+}
+
+.main-slide:nth-of-type(1) h2::after {
+  content: "01";
+}
+
+.main-slide:nth-of-type(2) h2::after {
+  content: "02";
+}
+
+.main-slide:nth-of-type(3) h2::after {
+  content: "03";
 }
 
 .main-slide p {
@@ -446,8 +483,28 @@ a {
 
 .main-slider-controls {
   position: absolute;
-  bottom: 140px;
-  right: 100px;
+  display: flex;
+  bottom: 135px;
+  right: 72px;
+}
+
+.main-slider-controls input {
+  display: none;
+}
+
+.main-slider-controls label {
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  font-size: 0;
+  background-image: url('../img/icons.svg');
+  background-position: 0 -501px;
+  background-repeat: no-repeat;
+  transform: scale(0.55);
+}
+
+.main-slide-btn:checked + label {
+  background-position: 0 -534px;
 }
 
 .inner-nav {
@@ -653,6 +710,21 @@ a {
   line-height: 40px;
   color: #000000;
   list-style: none;
+}
+
+.custom-list li {
+  position: relative;
+}
+
+.custom-list li::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -35px;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
 }
 
 .main-footer {
