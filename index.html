@@ -209,7 +209,7 @@
         <div class="contacts">
           <h3>Контакты</h3>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <img src="img/map.png" alt="Карта" width="560" height="222">
+          <a><img src="img/map.png" alt="Карта" width="560" height="222"></a>
           <a href="#" class="btn">Напишите нам</a>
         </div>
       </section>
@@ -279,28 +279,28 @@
         <li><a href="#">Квадрокоптеры</a></li>
       </ul>
     </nav>
-    <section class="modal-feedback hidden">
+    <section class="modal modal-feedback hidden">
       <h2 class="hidden">Напишете нам</h2>
+      <button class="close"><span class="hidden">Закрыть</span></button>
       <form action="//echo.htmlacademy.ru" method="post" class="modal-feedback-form">
-        <button class="close">Закрыть</button>
-        <label>
-          Ваше имя:
-          <input type="text" name="feedback-name" placeholder="Представьтесь, пожалуйста">
-        </label>
-        <label>
-          Ваш e-mail:
-          <input type="email" name="feedback-email" placeholder="Для отправки ответа">
-        </label>
-        <label>
-          Текст письма:
-          <textarea name="feedback" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-        </label>
+        <div>
+          <label for="feedback-name">Ваше имя:</label>
+          <input id="feedback-name" type="text" name="feedback-name" placeholder="Представьтесь, пожалуйста">
+        </div>
+        <div>
+          <label for="feedback-email">Ваш e-mail:</label>
+          <input id="feedback-email" type="email" name="feedback-email" placeholder="Для отправки ответа">
+        </div>
+        <div>
+          <label for="feedback-textarea">Текст письма:</label>
+          <textarea id="feedback-textarea" name="feedback" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        </div>
         <button type="submit" class="btn">Отправить</button>
       </form>
     </section>
-    <section class="modal-map hidden">
+    <section class="modal modal-map hidden">
       <h2 class="hidden">Мы на карте</h2>
-      <img src="#" alt="Карта">
+      <button class="close"><span class="hidden">Закрыть</span></button>
     </section>
   </body>
 </html>
