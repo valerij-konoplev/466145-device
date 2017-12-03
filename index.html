@@ -38,7 +38,7 @@
       </nav>
     </header>
     <main>
-      <section class="main-slider container">
+      <section id="carousel" class="main-slider container">
         <h2 class="hidden">Лучшие предложения</h2>
         <article class="main-slide">
           <img src="img/slider-1.png" alt="Палка для селфи" width="384" height="486">
@@ -95,11 +95,11 @@
           </div>
         </article>
         <div class="main-slider-controls">
-          <input id="main-slide-btn-1" class="main-slide-btn" type="radio" name="main-slider" checked>
+          <input id="main-slide-btn-1" class="main-slide-btn" data-slide="1" data-state="active" type="radio" name="main-slider" checked>
           <label for="main-slide-btn-1">Первый слайд</label>
-          <input id="main-slide-btn-2" class="main-slide-btn" type="radio" name="main-slider">
+          <input id="main-slide-btn-2" class="main-slide-btn" data-slide="2" type="radio" name="main-slider">
           <label for="main-slide-btn-2">Второй слайд</label>
-          <input id="main-slide-btn-3" class="main-slide-btn" type="radio" name="main-slider">
+          <input id="main-slide-btn-3" class="main-slide-btn" data-slide="3" type="radio" name="main-slider">
           <label for="main-slide-btn-3">Третий слайд</label>
         </div>
       </section>
@@ -302,6 +302,7 @@
       <h2 class="hidden">Мы на карте</h2>
       <button class="close"><span class="hidden">Закрыть</span></button>
     </section>
+    <script src="js/carousel.js"></script>
   </body>
 </html>
 

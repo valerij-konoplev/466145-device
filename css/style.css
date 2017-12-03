@@ -378,6 +378,7 @@ a {
 .main-slide {
   display: flex;
   justify-content: space-between;
+  min-height: 486px;
 }
 
 .main-slide img {
