@@ -336,6 +336,7 @@ a {
   width: 1160px;
   margin: 0 auto;
   background-color: #f7e296;
+  z-index: 1000;
 }
 
 .shop-block-inner ul {
