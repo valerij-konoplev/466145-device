@@ -11,5 +11,5 @@ mapLink.addEventListener("click", function (evt) {
 mapClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   mapPopup.classList.add("hidden");
-  maPopup.classList.remove("modal-open");
+  mapPopup.classList.remove("modal-open");
 });
