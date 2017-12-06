@@ -16,7 +16,9 @@
   font-style: normal;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -105,7 +107,7 @@ a {
   position: relative;
   margin-top: 40px;
   padding: 0 60px;
-  padding-top : 33px;
+  padding-top: 33px;
   padding-bottom: 163px;
   background-color: rgba(240, 197, 46, 0.5);
 }
@@ -161,7 +163,7 @@ a {
   left: -1px;
   width: 26px;
   height: 26px;
-  background-image: url('../img/icons.svg');
+  background-image: url("../img/icons.svg");
   background-repeat: no-repeat;
   background-position: 0 -475px;
 }
@@ -238,7 +240,7 @@ a {
 .user-block a::before {
   content: "";
   position: absolute;
-  background-image: url('../img/icons.svg');
+  background-image: url("../img/icons.svg");
   background-repeat: no-repeat;
 }
 
@@ -310,7 +312,7 @@ a {
   left: 225px;
   width: 26px;
   height: 26px;
-  background-image: url('../img/icons.svg');
+  background-image: url("../img/icons.svg");
   background-repeat: no-repeat;
   background-position: 0 -379px;
   opacity: 0.3;
@@ -498,7 +500,7 @@ a {
   width: 33px;
   height: 33px;
   font-size: 0;
-  background-image: url('../img/icons.svg');
+  background-image: url("../img/icons.svg");
   background-position: 0 -501px;
   background-repeat: no-repeat;
   transform: scale(0.55);
@@ -535,10 +537,9 @@ a {
 }
 
 .inner-nav-link:hover svg,
-.inner-nav-link:focus svg{
+.inner-nav-link:focus svg {
   background-color: rgba(240, 197, 46, 1);
 }
-
 
 .inner-nav-link:active image {
   opacity: 0.3;
@@ -557,9 +558,14 @@ a {
   padding-top: 151px;
   padding-bottom: 114px;
   margin-bottom: 95px;
-  background-image: linear-gradient(to bottom, #ffffff, #ffffff 39%, #e5e5e5 39%, #e5e5e5);
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    #ffffff 39%,
+    #e5e5e5 39%,
+    #e5e5e5
+  );
 }
-
 
 .features-wrapper {
   display: flex;
@@ -627,7 +633,8 @@ a {
   letter-spacing: 0.21px;
 }
 
-.features-description svg { /* позиционировать остальные слайды */
+.features-description svg {
+  /* позиционировать остальные слайды */
   position: absolute;
   right: -262px;
   bottom: 24px;
@@ -640,7 +647,7 @@ a {
 }
 
 .partners-link img {
-  filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
+  filter: url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
   filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(100%);
   opacity: 0.2;
@@ -649,7 +656,7 @@ a {
 .partners-link:hover img,
 .partners-link:focus img,
 .partners-link:active img {
-  filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
+  filter: url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
   -webkit-filter: grayscale(0%);
   opacity: 1;
 }
@@ -865,7 +872,6 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-
 .shop-block-footer li:not(:last-of-type) {
   margin-right: 35px;
 }
@@ -959,9 +965,20 @@ a {
 
 .catalog-bg {
   width: 100%;
-  background-image:
-    linear-gradient(to right, #dcdcdc 0%, #dcdcdc 30%, #eeeeee 30%, #eeeeee 100%),
-    linear-gradient(to right, #eeeeee 0%, #eeeeee 30%, #ffffff 30%, #ffffff 100%);
+  background-image: linear-gradient(
+      to right,
+      #dcdcdc 0%,
+      #dcdcdc 30%,
+      #eeeeee 30%,
+      #eeeeee 100%
+    ),
+    linear-gradient(
+      to right,
+      #eeeeee 0%,
+      #eeeeee 30%,
+      #ffffff 30%,
+      #ffffff 100%
+    );
   background-size: 100% 70px, 100% 100%;
   background-repeat: no-repeat;
   background-position-y: 146px, 216px;
@@ -999,7 +1016,7 @@ a {
   right: -24px;
   width: 14px;
   height: 17px;
-  background-image: url('../img/icons.svg');
+  background-image: url("../img/icons.svg");
   background-position: 0 -362px;
   background-repeat: no-repeat;
 }
@@ -1047,8 +1064,7 @@ a {
   left: 0;
   width: 328px;
   height: 100%;
-  background-image:
-    linear-gradient(to right, #dcdcdc 0%, #dcdcdc 100%),
+  background-image: linear-gradient(to right, #dcdcdc 0%, #dcdcdc 100%),
     linear-gradient(to right, #eeeeee 0%, #eeeeee 100%);
   background-size: 100% 70px, 100% 100%;
   background-repeat: no-repeat;
@@ -1146,7 +1162,7 @@ a {
   position: absolute;
   width: 30px;
   height: 33px;
-  background-image: url('../img/icons.svg');
+  background-image: url("../img/icons.svg");
   background-position: 0 -150px;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -1196,7 +1212,7 @@ a {
   left: -6px;
   width: 33px;
   height: 33px;
-  background-image: url('../img/icons.svg');
+  background-image: url("../img/icons.svg");
   background-position: 0 -22px;
   background-repeat: no-repeat;
 }
@@ -1235,7 +1251,7 @@ a {
   left: -7px;
   width: 35px;
   height: 35px;
-  background-image: url('../img/icons.svg');
+  background-image: url("../img/icons.svg");
   background-position: 0 -405px;
   background-repeat: no-repeat;
 }
@@ -1333,7 +1349,7 @@ a {
   display: inline-block;
   width: 21px;
   height: 20px;
-  background-image: url('../img/icons.svg');
+  background-image: url("../img/icons.svg");
   background-position: 0 -183px;
   background-repeat: no-repeat;
   opacity: 0.2;
@@ -1519,20 +1535,45 @@ a {
 }
 
 /* modal */
+
+@keyframes bounce {
+  0% {transform: translateY(-100%)}
+  70% {transform: translateY(5%)}
+  90% {transform: translateY(-5%)}
+  100% {transform: translateY(0)}
+}
+
+@keyframes shake {
+  0, 100% {transform: translateX(0)};
+  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px)};
+  20%, 40%, 60%, 80% {transform: translateX(10px)};
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
+}
+
+.modal-open {
+  animation-name: bounce;
+  animation-duration: 0.6s;
+}
+
 .modal {
   position: fixed;
-  top: 120px;
-  width: 960px;
-  min-height: 560px;
+  top: 0;
   right: 0;
   left: 0;
-  margin: 0 auto;
+  bottom: 0;
+  width: 960px;
+  min-height: 560px;
+  margin: auto;
   background-color: #ffffff;
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.7);
   z-index: 1000;
 }
 
-.modal .close {
+.modal-close {
   position: absolute;
   top: 18px;
   right: 18px;
@@ -1548,13 +1589,17 @@ a {
   opacity: 0.5;
 }
 
-.modal .close:hover,
-.modal .close:focus {
+.modal-close:hover,
+.modal-close:focus {
   opacity: 1;
 }
 
-.modal .close:active {
+.modal-close:active {
   opacity: 0.3;
+}
+
+.modal-feedback {
+  height: 650px;
 }
 
 .modal-feedback-form {
@@ -1619,8 +1664,13 @@ a {
 }
 
 .modal-map {
+  height: 563px;
   background-image: url("../img/map-bg.png");
   background-repeat: no-repeat;
   background-position: top -10px left -20px;
   background-size: 105%;
+}
+
+.map-open {
+  cursor: pointer;
 }
