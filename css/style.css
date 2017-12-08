@@ -641,6 +641,7 @@ a {
 .features-controls .btn:active {
   color: #fdde8d;
   cursor: default;
+  outline-color: transparent;
 }
 
 .features-controls .btn.active::before,
