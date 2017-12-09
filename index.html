@@ -30,6 +30,20 @@
           <li class="shop-block-catalog">
             <a class="shop-block-catalog-btn" href="#">Каталог товаров</a>
           </li>
+          <li class="shop-block-inner">
+            <ul>
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="catalog.html">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
@@ -108,7 +122,7 @@
           <li>
             <a class="inner-nav-link" href="#">
               <svg width="160" height="160">
-                <image xlink:href="img/popular-1.svg" width="97" height="55" x="31" y="52"/>
+                <image xlink:href="img/popular-1.svg" src="img/popular-1.png" width="97" height="55" x="31" y="52"/>
                 <!-- Можно добавить src="image.png" для фоллбэка на растр -->
               </svg>
               Виртуальная реальность
@@ -117,15 +131,15 @@
           <li>
             <a class="inner-nav-link" href="catalog.html">
               <svg width="160" height="160">
-                <image xlink:href="img/popular-2.svg" width="86" height="117" x="38" y="41"/>
+                <image xlink:href="img/popular-2.svg" src="img/popular-2.png" width="86" height="117" x="38" y="41"/>
               </svg>
-              Моноподы <br> для селфи
+              Моноподы для селфи
             </a>
           </li>
           <li>
             <a class="inner-nav-link" href="#">
               <svg width="160" height="160">
-                <image xlink:href="img/popular-3.svg" width="71" height="87" x="49" y="38"/>
+                <image xlink:href="img/popular-3.svg" src="img/popular-3.png" width="71" height="87" x="49" y="38"/>
               </svg>
               Экшн-камеры
             </a>
@@ -133,7 +147,7 @@
           <li>
             <a class="inner-nav-link" href="#">
               <svg width="160" height="160">
-                <image xlink:href="img/popular-4.svg" width="107" height="65" x="28" y="50"/>
+                <image xlink:href="img/popular-4.svg" src="img/popular-4.png" width="107" height="65" x="28" y="50"/>
               </svg>
               Фитнес-браслеты
             </a>
@@ -141,7 +155,7 @@
           <li>
             <a class="inner-nav-link" href="#">
               <svg width="160" height="160">
-                <image xlink:href="img/popular-5.svg" width="56" height="98" x="55" y="32"/>
+                <image xlink:href="img/popular-5.svg" src="img/popular-5.png" width="56" height="98" x="55" y="32"/>
               </svg>
               Умные часы
             </a>
@@ -149,7 +163,7 @@
           <li>
             <a class="inner-nav-link" href="#">
               <svg width="160" height="160">
-                <image xlink:href="img/popular-6.svg" width="132" height="69" x="13" y="49"/>
+                <image xlink:href="img/popular-6.svg" src="img/popular-6.png" width="132" height="69" x="13" y="49"/>
               </svg>
               Квадрокоптеры
             </a>
@@ -170,14 +184,14 @@
               <image xlink:href="img/delivery.svg" width="136" height="164"/>
             </svg>
           </div>
-          <div class="features-description">
+          <div class="features-description hidden">
             <h3>Гарантия</h3>
             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
             <svg width="171" height="194">
               <image xlink:href="img/warranty.svg" width="171" height="194"/>
             </svg>
           </div>
-          <div class="features-description">
+          <div class="features-description hidden">
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
             <svg width="156" height="186">
@@ -196,8 +210,8 @@
       <section class="about-and-contacts container">
         <div class="about-us">
           <h3>О нас</h3>
-          <p>Огромный выбор гаджетов не оставит равнодушным гика, <br> который есть в каждом из нас.</p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки <br> России! DEVICE работает со многими транспортными компаниями:</p>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
           <ul class="custom-list">
             <li>Деловые Линии</li>
             <li>Автотрейдинг</li>
@@ -214,7 +228,6 @@
       </section>
     </main>
     <footer class="main-footer">
-      <!-- <img src="img/main-logo-yellow.png" alt="Device" width="163" height="36"> -->
       <div class="main-footer-wrapper container">
         <div class="main-footer-top">
           <h4 class="main-title-footer">Device</h4>
@@ -264,20 +277,6 @@
         </div>
       </div>
     </footer>
-    <nav class="shop-block-inner hidden">
-      <ul>
-        <li><a href="#">Виртуальная реальность</a></li>
-        <li><a href="catalog.html">Моноподы для селфи</a></li>
-        <li><a href="#">Экшн-камеры</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">Фитнес-браслеты</a></li>
-        <li><a href="#">Умные часы</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">Квадрокоптеры</a></li>
-      </ul>
-    </nav>
     <section class="modal modal-feedback hidden">
       <h2 class="hidden">Напишете нам</h2>
       <button class="modal-close"><span class="hidden">Закрыть</span></button>

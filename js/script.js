@@ -1,8 +1,6 @@
 var carousel = document.getElementById("carousel");
 var slides = 3;
 // var speed = 14000; // 10 seconds
-var navLink = document.querySelector(".shop-block-catalog-btn");
-var navPopup = document.querySelector(".shop-block-inner");
 var link = document.querySelector(".feedback-open");
 var popup = document.querySelector(".modal-feedback");
 var close = popup.querySelector(".modal-close");
@@ -77,11 +75,6 @@ if (carousel) {
     indicators[i].addEventListener("click", setSlide(i));
   }
 }
-
-navLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  navPopup.classList.toggle("hidden");
-});
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -160,7 +153,7 @@ mapClose.addEventListener("click", function (evt) {
 
 // спрятать все таб контенты кроме первого
 document.querySelectorAll('.features-description:not(:first-of-type)').forEach(function(tabContent) {
-  tabContent.style.display = 'none';
+  tabContent.classList.add("hidden");
 });
 
 // к каждому таб линку и таб контенту добавить одинаковый дата аттрибут
@@ -180,12 +173,12 @@ tabsContainer.onclick = function(e) {
   e.target.classList.add('active');
   // скрыть все таб контенты
   tabsContents.forEach(function(tabContent) {
-    tabContent.style.display = 'none';
+    tabContent.classList.add("hidden");
   });
   // сверить дата атрибуты, показать подходящий таб контент
   tabsContents.forEach(function(tabContent) {
     if (tabContent.dataset.tab === e.target.dataset.tab) {
-      tabContent.style.display = 'block';
+      tabContent.classList.remove("hidden");
     }
   });
 };
