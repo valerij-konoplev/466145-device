@@ -43,7 +43,7 @@ a {
   color: #000000;
 }
 
-.hidden:not(:focus):not(:active) {
+.hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1343,10 +1343,6 @@ a {
   margin-bottom: 31px;
 }
 
-.sorting-form-checkbox {
-  display: none;
-}
-
 .sorting-form-checkbox + label::before {
   content: "";
   position: absolute;
@@ -1385,10 +1381,6 @@ a {
 
 .sorting-form-bluetooth label:last-child {
   margin-bottom: 30px;
-}
-
-.sorting-form-radio {
-  display: none;
 }
 
 .sorting-form-radio + label::before {
@@ -1585,7 +1577,7 @@ a {
   font-size: 18px;
   font-weight: 800;
   line-height: 22px;
-  letter-spacing: 4.67;
+  letter-spacing: 0.18px;
   color: #000000;
 }
 
