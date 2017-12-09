@@ -597,21 +597,57 @@ a {
   width: 160px;
 }
 
-.inner-nav-list svg {
+.inner-nav-list .svg-wrapper {
+  width: 160px;
+  height: 160px;
   background-color: rgba(240, 197, 46, 0.5);
-  margin-bottom: 27px;
+  margin-bottom: 33px;
 }
 
-.inner-nav-link:hover svg,
-.inner-nav-link:focus svg {
+.inner-nav-link img {
+  position: relative;
+}
+
+.inner-nav-list-item:nth-of-type(1) img {
+  left: 31px;
+  top: 52px;
+}
+
+.inner-nav-list-item:nth-of-type(2) img {
+  left: 38px;
+  top: 41px;
+}
+
+.inner-nav-list-item:nth-of-type(3) img {
+  left: 49px;
+  top: 38px;
+}
+
+.inner-nav-list-item:nth-of-type(4) img {
+  left: 28px;
+  top: 50px;
+}
+
+.inner-nav-list-item:nth-of-type(5) img {
+  left: 55px;
+  top: 32px;
+}
+
+.inner-nav-list-item:nth-of-type(6) img {
+  left: 13px;
+  top: 49px;
+}
+
+.inner-nav-link:hover .svg-wrapper,
+.inner-nav-link:focus .svg-wrapper {
   background-color: rgba(240, 197, 46, 1);
 }
 
-.inner-nav-link:active image {
+.inner-nav-link:active img {
   opacity: 0.3;
 }
 
-.inner-nav-link:active svg {
+.inner-nav-link:active .svg-wrapper {
   background-color: #f0c52e;
 }
 
@@ -704,8 +740,7 @@ a {
   letter-spacing: 0.21px;
 }
 
-.features-description svg {
-  /* позиционировать остальные слайды */
+.features-description img {
   position: absolute;
   right: -262px;
   bottom: 24px;
