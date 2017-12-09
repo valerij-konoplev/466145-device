@@ -153,7 +153,7 @@ mapClose.addEventListener("click", function (evt) {
 
 // спрятать все таб контенты кроме первого
 document.querySelectorAll('.features-description:not(:first-of-type)').forEach(function(tabContent) {
-  tabContent.classList.add("hidden");
+  tabContent.style.display = 'none';
 });
 
 // к каждому таб линку и таб контенту добавить одинаковый дата аттрибут
@@ -173,12 +173,12 @@ tabsContainer.onclick = function(e) {
   e.target.classList.add('active');
   // скрыть все таб контенты
   tabsContents.forEach(function(tabContent) {
-    tabContent.classList.add("hidden");
+    tabContent.style.display = 'none';
   });
   // сверить дата атрибуты, показать подходящий таб контент
   tabsContents.forEach(function(tabContent) {
     if (tabContent.dataset.tab === e.target.dataset.tab) {
-      tabContent.classList.remove("hidden");
+      tabContent.style.display = 'block';
     }
   });
 };
