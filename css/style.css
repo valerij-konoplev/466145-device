@@ -1421,7 +1421,11 @@ a {
 .sorting-form-checkbox:disabled + label,
 .sorting-form-radio:disabled + label,
 .sorting-form-checkbox:disabled:hover + label,
-.sorting-form-radio:disabled:hover + label {
+.sorting-form-radio:disabled:hover + label,
+.sorting-form-checkbox:disabled:active + label,
+.sorting-form-radio:disabled:active + label,
+.sorting-form-checkbox:disabled + label::before,
+.sorting-form-radio:disabled + label::before {
   opacity: 0.25;
 }
 
